@@ -1,0 +1,39 @@
+### Criar profissional (admin)
+POST http://localhost:8080/api/profissionais/unidade/{{unidadeId}}
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "nome": "Dr. Carlos Silva",
+  "especialidade": "Clínico Geral",
+  "registro": "CRM-12345",
+  "prefixoFicha": "CG",
+  "limiteFichasDia": 20,
+  "horarioInicio": "07:00:00",
+  "horarioFim": "11:00:00",
+  "diasAtendimento": "SEG,TER,QUA,QUI,SEX"
+}
+
+### Listar profissionais da unidade
+GET http://localhost:8080/api/profissionais/unidade/{{unidadeId}}
+Content-Type: application/json
+
+### Criar profissional (admin)
+POST http://localhost:8080/api/profissionais/unidade/b650f397-e506-4f4a-be53-7a404baa97e0
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBzYXVkZWZhY2lsLmNvbSIsInBlcmZpbCI6IkFETUlOIiwiaWF0IjoxNzc3OTQxMDg5LCJleHAiOjE3NzgwMjc0ODl9.y5_CGfTJaldz4krLMT5YCfKuMI6RUaoB6yTayqQklLI
+
+{
+  "nome": "Dr. Carlos Silva",
+  "especialidade": "Clínico Geral",
+  "registro": "CRM-12345",
+  "prefixoFicha": "CG",
+  "limiteFichasDia": 20,
+  "horarioInicio": "07:00:00",
+  "horarioFim": "23:59:00",
+  "diasAtendimento": "SEG,TER,QUA,QUI,SEX"
+}
+
+### Listar profissionais da unidade
+GET http://localhost:8080/api/profissionais/unidade/b650f397-e506-4f4a-be53-7a404baa97e0
+Content-Type: application/json

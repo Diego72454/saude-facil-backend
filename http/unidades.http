@@ -1,0 +1,12 @@
+### Criar unidade (admin)
+POST http://localhost:8080/api/unidades
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBzYXVkZWZhY2lsLmNvbSIsInBlcmZpbCI6IkFETUlOIiwiaWF0IjoxNzc3OTQxMDg5LCJleHAiOjE3NzgwMjc0ODl9.y5_CGfTJaldz4krLMT5YCfKuMI6RUaoB6yTayqQklLI
+
+{
+  "nome": "UBS Centro",
+  "endereco": "Rua Principal, 123 - Centro",
+  "telefone": "87999999999",
+  "horarioAbertura": "07:00:00",
+  "horarioFechamento": "11:00:00"
+}

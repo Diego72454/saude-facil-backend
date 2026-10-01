@@ -1,0 +1,56 @@
+
+### Pegar ficha
+POST http://localhost:8080/api/fichas/profissional/6c73f036-c732-4d8d-985f-3518e3f682b5
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqb2FvQGVtYWlsLmNvbSIsInBlcmZpbCI6IlBBQ0lFTlRFIiwiaWF0IjoxNzc3OTQwNjIxLCJleHAiOjE3NzgwMjcwMjF9.q0ZD3kGLo4xjxMLWy9jSB0ikcDX0_5HjX_jbzPwXCbE
+
+### Minhas fichas
+GET http://localhost:8080/api/fichas/minhas
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqb2FvQGVtYWlsLmNvbSIsInBlcmZpbCI6IlBBQ0lFTlRFIiwiaWF0IjoxNzc3OTQwNjIxLCJleHAiOjE3NzgwMjcwMjF9.q0ZD3kGLo4xjxMLWy9jSB0ikcDX0_5HjX_jbzPwXCbE
+
+
+### Pegar ficha
+POST http://localhost:8080/api/fichas/profissional/6c73f036-c732-4d8d-985f-3518e3f682b5
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqb2FvQGVtYWlsLmNvbSIsInBlcmZpbCI6IlBBQ0lFTlRFIiwiaWF0IjoxNzc3OTQxOTgzLCJleHAiOjE3NzgwMjgzODN9.0RcBVTfRh_hGmiI1PmjrudD17k2TfrbLFJBZbX6RwFc
+
+
+### Pegar ficha
+POST http://localhost:8080/api/fichas/profissional/6c73f036-c732-4d8d-985f-3518e3f682b5
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqb2FvQGVtYWlsLmNvbSIsInBlcmZpbCI6IlBBQ0lFTlRFIiwiaWF0IjoxNzc3OTQxOTgzLCJleHAiOjE3NzgwMjgzODN9.0RcBVTfRh_hGmiI1PmjrudD17k2TfrbLFJBZbX6RwFc
+
+### Tentar pegar segunda ficha (deve bloquear)
+POST http://localhost:8080/api/fichas/profissional/6c73f036-c732-4d8d-985f-3518e3f682b5
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqb2FvQGVtYWlsLmNvbSIsInBlcmZpbCI6IlBBQ0lFTlRFIiwiaWF0IjoxNzc3OTQxOTgzLCJleHAiOjE3NzgwMjgzODN9.0RcBVTfRh_hGmiI1PmjrudD17k2TfrbLFJBZbX6RwFc
+
+### Minhas fichas
+GET http://localhost:8080/api/fichas/minhas
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqb2FvQGVtYWlsLmNvbSIsInBlcmZpbCI6IlBBQ0lFTlRFIiwiaWF0IjoxNzc3OTQxOTgzLCJleHAiOjE3NzgwMjgzODN9.0RcBVTfRh_hGmiI1PmjrudD17k2TfrbLFJBZbX6RwFc
+
+### Fichas do dia (atendente) - usar token do admin
+GET http://localhost:8080/api/fichas/hoje/6c73f036-c732-4d8d-985f-3518e3f682b5
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBzYXVkZWZhY2lsLmNvbSIsInBlcmZpbCI6IkFETUlOIiwiaWF0IjoxNzc3OTQxMDg5LCJleHAiOjE3NzgwMjc0ODl9.y5_CGfTJaldz4krLMT5YCfKuMI6RUaoB6yTayqQklLI
+
+### Atualizar status para EM_ATENDIMENTO - usar token do admin
+PUT http://localhost:8080/api/fichas/e1ed7bdc-f995-47b7-a607-6b9ae53651b5/status
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBzYXVkZWZhY2lsLmNvbSIsInBlcmZpbCI6IkFETUlOIiwiaWF0IjoxNzc3OTQxMDg5LCJleHAiOjE3NzgwMjc0ODl9.y5_CGfTJaldz4krLMT5YCfKuMI6RUaoB6yTayqQklLI
+
+{
+  "status": "EM_ATENDIMENTO"
+}
+
+### Atualizar status para CONCLUIDO - usar token do admin
+PUT http://localhost:8080/api/fichas/e1ed7bdc-f995-47b7-a607-6b9ae53651b5/status
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBzYXVkZWZhY2lsLmNvbSIsInBlcmZpbCI6IkFETUlOIiwiaWF0IjoxNzc3OTQxMDg5LCJleHAiOjE3NzgwMjc0ODl9.y5_CGfTJaldz4krLMT5YCfKuMI6RUaoB6yTayqQklLI
+
+{
+  "status": "CONCLUIDO"
+}
+### Atualizar status para CONCLUIDO - usar token do admin
