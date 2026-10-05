@@ -33,6 +33,7 @@ public class AuthService {
         usuario.setEmail(request.getEmail());
         usuario.setSenhaHash(passwordEncoder.encode(request.getSenha()));
         usuario.setTelefone(request.getTelefone());
+        usuario.setNumeroProntuario(request.getNumeroProntuario());
         usuario.setDataNascimento(request.getDataNascimento());
         usuario.setPerfil(Perfil.PACIENTE);
 

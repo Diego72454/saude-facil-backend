@@ -31,6 +31,9 @@ public class Usuario {
 
     private String telefone;
 
+    @Column(name = "numero_prontuario")
+    private String numeroProntuario;
+
     @Column(name = "data_nascimento")
     private LocalDate dataNascimento;
 

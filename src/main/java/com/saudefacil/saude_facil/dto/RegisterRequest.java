@@ -10,5 +10,6 @@ public class RegisterRequest {
     private String email;
     private String senha;
     private String telefone;
+    private String numeroProntuario;
     private LocalDate dataNascimento;
 }
