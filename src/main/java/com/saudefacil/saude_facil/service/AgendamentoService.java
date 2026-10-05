@@ -90,13 +90,13 @@ public class AgendamentoService {
             throw new RuntimeException("Você não tem permissão para cancelar este agendamento!");
         }
 
-        // Verifica regra das 24 horas
+        // Verifica regra dos 30 minutos
         LocalDateTime limite = agendamento.getDataConsulta()
                 .atTime(agendamento.getHorario())
-                .minusHours(24);
+                .minusMinutes(30);
 
         if (LocalDateTime.now().isAfter(limite)) {
-            throw new RuntimeException("Não é possível cancelar com menos de 24h de antecedência!");
+            throw new RuntimeException("Não é possível cancelar com menos de 30 minutos de antecedência!");
         }
 
         agendamento.setStatus(StatusAgendamento.CANCELADO);
